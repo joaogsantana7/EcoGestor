@@ -30,19 +30,19 @@ public class Login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String usuario = request.getParameter("inputUser");
-        String senha = request.getParameter("inputPassword");
+        String username = request.getParameter("inputUser");
+        String psw = request.getParameter("inputPassword");
 
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
 
         try (var con = ConnectionFactory.getConnection()) {
 
-            String sql = "SELECT * FROM users WHERE username = ? AND password = ?";
+            String sql = "SELECT * FROM users WHERE username = ? AND psw = ?";
 
             PreparedStatement stmt = con.prepareStatement(sql);
-            stmt.setString(1, usuario);
-            stmt.setString(2, senha);
+            stmt.setString(1, username);
+            stmt.setString(2, psw);
 
             ResultSet rs = stmt.executeQuery();
 

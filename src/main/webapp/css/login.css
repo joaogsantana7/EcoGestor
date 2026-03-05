@@ -27,10 +27,6 @@ body{
     margin-bottom: 25px;
     
 }
-.container form{
-    width: 1%;
-    padding: 1%;
-}
 
 input{
     width: 100%;
@@ -62,7 +58,7 @@ button{
 }
 
 button:hover {
-    background-color: var(--seccess-hover);
+    background-color: var(--success-hover);
 }
 
 @media (min-width: 300S){
