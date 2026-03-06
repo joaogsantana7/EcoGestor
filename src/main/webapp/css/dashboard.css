@@ -90,8 +90,8 @@ body {
 .btn-pesquisa {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: var(--white);
-    color: var(--primary-dark);
+    background-color: var(--primary-medium);
+    color: var(--white);
     border: none;
     border-radius: 100px;
     cursor: pointer;
@@ -99,9 +99,9 @@ body {
 }
 
 
-.botao-pesquisa,
+.botao-pesquisar,
 .btn-pesquisa:hover {
-    background-color: var(--primary) 
+    background-color: var(--primary-dark) 
 }
 
 
@@ -121,4 +121,45 @@ body {
     text-align: center;
     border-bottom: 1px solid var(--primary-dark);
         
+}
+
+
+#paginacao {
+    margin-top: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.controle-paginacao{
+    font-size: 15px;
+    color: var(--primary-dark);
+}
+
+
+#pagina {
+    border: 1px solid var(--primary-)
+}
+
+
+.conteiner-btn
+#btnVoltar,
+#btnProximo{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-medium);
+    color: var(--white);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.conteiner-btn
+#btnVoltar,
+#btnProximo:hover{
+    background-color: var(--primary-dark);
 }
