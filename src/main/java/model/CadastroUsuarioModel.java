@@ -20,14 +20,6 @@ public class CadastroUsuarioModel {
     
     }
     
-    public int getId() {
-        return id;    
-    }
-    
-    public void setId(){
-        this.id = id;     
-    }
-    
     public String getNome(){
         return nome;
     }
